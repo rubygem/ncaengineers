@@ -1,0 +1,6 @@
+@media only screen and (max-device-width: 480px) {
+  body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fc0;
+  }
+}
