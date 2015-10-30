@@ -5,11 +5,11 @@
       <meta name="description" content="Neil Cameron Associates Limited. High Voltage specialists.">
       <meta name=viewport content="width=device-width, initial-scale=1">
       <meta name="mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
       <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
 
       <!-- build:css styles/main.css -->
       <link rel="stylesheet" href="css/main.css">
@@ -18,6 +18,18 @@
       <!-- endbuild -->
   </head>
   <body>
-    <%=yield%>
+    <div class="bg"></div>
+    <div class='container'>
+      <div class='main'>
+        <div class="ui huge message">
+            <h1 class="ui huge header">Neil Cameron Associates Limited</h1>
+            <p>
+              High voltage specialists
+            </p>
+        </div>
+        <div class="ui segment">
+          <%=yield%>
+          <p>image courtesy of <a href="https://flic.kr/p/6q773v">Bert Kaufmann on flickr</a></p>
+        </div>
   </body>
 </html>
