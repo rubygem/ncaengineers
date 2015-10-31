@@ -16,3 +16,14 @@ body{
 .ui.segment {
     background-color: rgba(255,255,255,0.7);
 }
+
+@media (min-height: 320px) {
+  .footer {
+    position: absolute !important;/* !important for SO snippet priority */
+    bottom: 0;
+    width: 100%;
+    height:4rem;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+  }
+}
