@@ -9,17 +9,22 @@ p{
   font-size:18px;
 }
 
+.info{
+  width: 80% !important;
+}
+
 .container{
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255,255,255,.1);
   margin: 5% 10%;
 }
 
 .ui.huge.message {
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255,255,255,.5);
 }
 
 .ui.segment {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.9);
+    padding: 1rem;
 }
 
 .card.content.header{
@@ -27,5 +32,5 @@ p{
 }
 
 .bottom{
-  margin-top:4rem;
+  margin:1rem 0;
 }
