@@ -38,4 +38,8 @@ class App < Sinatra::Application
 	get '/' do
 		erb :index, :layout => :layout
 	end
+
+	get '/jimmy' do
+		erb :jimmeh, :layout => :new_layout
+	end
 end
