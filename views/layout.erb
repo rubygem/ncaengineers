@@ -1,54 +1,126 @@
-<html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <title>NCA Engineers</title>
-      <meta name="description" content="Neil Cameron Associates Ltd. High Voltage commissioning engineers.">
-      <meta name=viewport content="width=device-width, initial-scale=1">
-      <meta name="mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
-      <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site Properties -->
+  <title>Neil Cameron Associates Ltd.</title>
+ 
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Site Properities -->
 
-      <!-- build:css styles/main.css -->
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/mobile.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
 
-      <!-- endbuild -->
-  </head>
-  <body>
-    <div class='container'>
-      <div class='main'>
-        <div class="ui huge message">
-            <h1 class="ui huge header">Neil Cameron Associates Ltd</h1>
-            <p>
-              High Voltage Commissioning Engineers
-            </p>
-        </div>
-      
-        <%=yield%>
-      
-        <div class="ui segment">
-          <div class="bottom">
-              <center>
-                Neil Cameron Associates 2015. All Rights Reserved. 
-                <br>
-                Image courtesy of <a href="https://flic.kr/p/6q773v">Bert Kaufmann on flickr</a>
-              </center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 
-    ga('create', 'UA-70728700-1', 'auto');
-    ga('send', 'pageview');
+  <style type="text/css">
+    .ui.text.container {
+      max-width: 900px !important;
+    }
 
-  </script>
+    .masthead.segment {
+      min-height: 200px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 1rem;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+  <%=yield%>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70728700-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
